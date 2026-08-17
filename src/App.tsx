@@ -36,12 +36,11 @@ export function App() {
       <Navbar 
         darkMode={darkMode} 
         setDarkMode={setDarkMode} 
-        onOpenResume={() => {}} 
       />
 
       {/* Main Content Sections with Alternating Depth Washes */}
       <main className="relative z-10">
-        <Hero onOpenResume={() => {}} />
+        <Hero />
         <About />
         <Skills />
         <AutomationPipeline />

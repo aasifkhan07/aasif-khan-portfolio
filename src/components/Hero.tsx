@@ -15,9 +15,6 @@ import {
 import { PERSONAL_INFO, HEADLINE_METRICS, type MetricItem } from '../data/portfolioData';
 import { useCountUp } from '../hooks/useCountUp';
 
-interface HeroProps {
-  onOpenResume: () => void;
-}
 
 // Custom Mini Sparklines for each metric
 const SparklineIcon: React.FC<{ type: string; color: string }> = ({ type, color }) => {
@@ -106,7 +103,7 @@ const StatCard: React.FC<{ metric: MetricItem; idx: number }> = ({ metric, idx }
   );
 };
 
-export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
+export const Hero: React.FC = () => {
   return (
     <section
       id="hero"

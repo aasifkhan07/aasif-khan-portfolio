@@ -13,10 +13,9 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 interface NavbarProps {
   darkMode: boolean;
   setDarkMode: (val: boolean) => void;
-  onOpenResume: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenResume }) => {
+export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
